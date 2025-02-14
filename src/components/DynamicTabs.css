@@ -1,0 +1,73 @@
+.tabs-container {
+    max-width: 800px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    padding: 10px; /* Optional: Add some padding */
+}
+
+.tabs-header {
+    margin: 0 30px;
+    color: whitesmoke;
+    display: flex;
+    flex-wrap: wrap; /* Allow tabs to wrap to the next line */
+    gap: 10px; /* Add gap between tabs */
+}
+
+.tab {
+    width: 100px;
+    padding: 10px 20px;
+    cursor: pointer;
+    position: relative;
+    border-top-left-radius:10px;
+    border-top-right-radius: 10px;
+    background-color:#3c3c3d;
+    flex-shrink: 0; /* Prevent tabs from shrinking */
+}
+
+.tab.active {
+    background-color: #2d2d2d;
+    border:2px solid #1DB954;
+}
+
+.close-tab {
+    margin-left: 15px;
+    color: whitesmoke;
+    font-size: 1.8rem;
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+.close-tab:hover {
+    color:#1DB954;
+    transform: scale(1.5);
+}
+
+.add-tab {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    background-color: #333333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-left: 30px;
+    flex-shrink: 0; /* Prevent the add button from shrinking */
+}
+.add-tab:hover {
+    color:#1DB954;
+    border: 2px solid #1DB954;
+}
+
+.tabs-content {
+    margin:20px 30px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    color:whitesmoke;
+}
+.tabs-content:hover{
+    font-size: 1.2rem;
+    border:2px solid #14dc5a;
+}
